@@ -30,23 +30,33 @@ export default function Input({
   const passwordChecker = (event) => {
     setPassword(event.target.value);
   };
-  const [firstNameEror, setFirstNameEror] = useState();
-  const [lastNameEror, setLastNameEror] = useState();
-  const [emailEror, setEmailEror] = useState();
-  const [passwordEror, setPasswordEror] = useState();
-  if (firstName === "") {
-    setFirstNameEror(true);
-  }
-  if (lastName === "") {
-    setLastNameEror(true);
-  }
-  if (email === "") {
-    setEmailEror(true);
-  }
-  if (password === "") {
-    setPasswordEror(true);
-  }
-  const BigBoss = () => {};
+  const [firstNameEror, setFirstNameEror] = useState(true);
+  const [lastNameEror, setLastNameEror] = useState(true);
+  const [emailEror, setEmailEror] = useState(true);
+  const [passwordEror, setPasswordEror] = useState(true);
+  // if (firstName === "") {
+  //   setFirstNameEror(true);
+  // }
+  // if (lastName === "") {
+  //   setLastNameEror(true);
+  // }
+  // if (email === "") {
+  //   setEmailEror(true);
+  // }
+  // if (password === "") {
+  //   setPasswordEror(true);
+  // }
+  const BigBoss = () => {
+    if (firstName === "") {
+      setFirstNameEror(true);
+    } else if (lastName === "") {
+      setLastNameEror(true);
+    } else if (password === "") {
+      setPasswordEror(true);
+    } else if (email === "") {
+      setEmailEror(true);
+    }
+  };
 
   return (
     <Parent>

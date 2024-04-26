@@ -2,7 +2,7 @@ import styled from "styled-components";
 import icon from "/images/icon-error.svg";
 
 export const Inputs = styled.input`
-  background-image: url(${(props) => (props.eror === "" ? icon : "")});
+  background-image: url(${(props) => (props.eror ? icon : "")});
   background-repeat: no-repeat !important;
   background-position: right 2rem top 1.5rem !important;
   border-radius: 5px;
