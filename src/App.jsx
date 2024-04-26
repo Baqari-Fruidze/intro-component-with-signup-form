@@ -1,7 +1,12 @@
 import styled from "styled-components";
 import Input from "./components/Input";
+import { useState } from "react";
 
 function App() {
+  const [firstName, setFirstName] = useState();
+  const [lastName, setLastName] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
   return (
     <>
       <Common>
@@ -13,7 +18,16 @@ function App() {
             is invaluable.
           </Para>
         </Header>
-        <Input />
+        <Input
+          firstName={firstName}
+          lastName={lastName}
+          email={email}
+          password={password}
+          setFirstName={setFirstName}
+          setLastName={setLastName}
+          setEmail={setEmail}
+          setPassword={setPassword}
+        />
       </Common>
     </>
   );
