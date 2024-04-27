@@ -30,10 +30,10 @@ export default function Input({
   const passwordChecker = (event) => {
     setPassword(event.target.value);
   };
-  const [firstNameEror, setFirstNameEror] = useState(true);
-  const [lastNameEror, setLastNameEror] = useState(true);
-  const [emailEror, setEmailEror] = useState(true);
-  const [passwordEror, setPasswordEror] = useState(true);
+  const [firstNameEror, setFirstNameEror] = useState(false);
+  const [lastNameEror, setLastNameEror] = useState(false);
+  const [emailEror, setEmailEror] = useState(false);
+  const [passwordEror, setPasswordEror] = useState(false);
   // if (firstName === "") {
   //   setFirstNameEror(true);
   // }
