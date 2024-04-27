@@ -182,6 +182,9 @@ const Parent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  @media (min-width: 90rem) {
+    width: 55%;
+  }
 `;
 const Ftr = styled.footer`
   padding: 0 3.9rem 2.4rem;

@@ -13,4 +13,7 @@ export const Btn = styled.button`
   letter-spacing: 1px;
   border: none;
   padding: 1.5rem;
+  &:hover {
+    cursor: pointer;
+  }
 `;
