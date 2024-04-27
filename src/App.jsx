@@ -36,7 +36,7 @@ const Common = styled.div`
   flex-direction: column;
   gap: 6.4rem;
   margin: 0 auto;
-  max-width: 45rem;
+  max-width: 44rem;
   @media (min-width: 90rem) {
     flex-direction: row;
     max-width: 110rem;
@@ -48,8 +48,6 @@ const Header = styled.header`
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  align-items: center;
-  width: 48%;
 `;
 const H1 = styled.h1`
   color: #fff;
@@ -78,7 +76,7 @@ const Para = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
-  width: 40ch;
+  /* width: 40ch; */
   @media (min-width: 90rem) {
     color: #fff;
     font-family: Poppins;
