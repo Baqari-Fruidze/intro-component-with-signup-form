@@ -30,10 +30,10 @@ export default function Input({
   const passwordChecker = (event) => {
     setPassword(event.target.value);
   };
-  const [firstNameEror, setFirstNameEror] = useState(false);
-  const [lastNameEror, setLastNameEror] = useState(false);
-  const [emailEror, setEmailEror] = useState(false);
-  const [passwordEror, setPasswordEror] = useState(false);
+  const [firstNameEror, setFirstNameEror] = useState();
+  const [lastNameEror, setLastNameEror] = useState();
+  const [emailEror, setEmailEror] = useState();
+  const [passwordEror, setPasswordEror] = useState();
   // if (firstName === "") {
   //   setFirstNameEror(true);
   // }
@@ -72,7 +72,7 @@ export default function Input({
             type="text"
             name="firstName"
             placeholder="First Name"
-            eror={firstNameEror}
+            mistake={firstNameEror}
           />
           {firstNameEror ? (
             <ErrorMessage>First Name cannot be empty</ErrorMessage>
@@ -85,7 +85,7 @@ export default function Input({
             type="text"
             name="lastName"
             placeholder="Last Name"
-            eror={lastNameEror}
+            mistake={lastNameEror}
           />
           {lastNameEror ? (
             <ErrorMessage>Last Name cannot be empty</ErrorMessage>
@@ -98,7 +98,7 @@ export default function Input({
             type="text"
             name="email"
             placeholder="Email Address"
-            eror={emailEror}
+            mistake={emailEror}
           />
           {emailEror ? (
             <ErrorMessage>Looks like this is not an email</ErrorMessage>
@@ -111,7 +111,7 @@ export default function Input({
             type="text"
             name="password"
             placeholder="Password"
-            eror={passwordEror}
+            mistake={passwordEror}
           />
           {passwordEror ? (
             <ErrorMessage>Password cannot be empty</ErrorMessage>
