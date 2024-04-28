@@ -49,11 +49,14 @@ export default function Input({
   const BigBoss = () => {
     if (firstName === "") {
       setFirstNameEror(true);
-    } else if (lastName === "") {
+    }
+    if (lastName === "") {
       setLastNameEror(true);
-    } else if (password === "") {
+    }
+    if (password === "") {
       setPasswordEror(true);
-    } else if (email === "") {
+    }
+    if (email === "") {
       setEmailEror(true);
     }
   };
@@ -118,7 +121,7 @@ export default function Input({
           ) : (
             ""
           )}
-          <Btn type="submit" onSubmit={BigBoss}>
+          <Btn type="submit" onClick={BigBoss}>
             CLAIM YOUR FREE TRIAL
           </Btn>
           <Ftr>
