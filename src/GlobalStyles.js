@@ -17,9 +17,11 @@ html{
         background-color: #FF7979;
         padding: 8.8rem 2.4rem 5rem 2.4rem;
         min-height: 100vh;
+        background-size: cover;
         @media (min-width: 90rem){
             padding: 12.1rem 16.5rem ;
             background-image: url("/images/bg-intro-desktop.png");
+            background-size: cover;
         }
     }
 

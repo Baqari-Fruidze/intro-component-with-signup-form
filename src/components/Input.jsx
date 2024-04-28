@@ -125,8 +125,10 @@ export default function Input({
             CLAIM YOUR FREE TRIAL
           </Btn>
           <Ftr>
-            <FtrSpn>By clicking the button, you are agreeing to our</FtrSpn>
-            <FtrSpann>Terms and Services</FtrSpann>
+            <FtrSpn>
+              By clicking the button, you are agreeing to our
+              <FtrSpann>Terms and Services</FtrSpann>
+            </FtrSpn>
           </Ftr>
         </Form>
       </FormsDiv>
@@ -191,6 +193,8 @@ const Parent = styled.div`
 `;
 const Ftr = styled.footer`
   padding: 0 3.9rem 2.4rem;
+  display: flex;
+  justify-content: center;
 `;
 const FtrSpn = styled.span`
   color: #bab7d4;

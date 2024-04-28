@@ -7,7 +7,8 @@ export const Inputs = styled.input`
   background-position: right 2rem top 1.5rem !important;
   border-radius: 5px;
   border: 1px solid #dedede;
-  padding: 2rem 0.5rem;
+  padding: 2rem 0;
+  padding-left: 2rem;
   &::placeholder {
     color: #3d3b48;
     font-family: Poppins;
